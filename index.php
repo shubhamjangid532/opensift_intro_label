@@ -1,3 +1,5 @@
-<php
-     print `/usr/sbin/ifconfig`;
-?>
+<pre>
+     <php
+          print `/usr/sbin/ifconfig`;
+     ?>
+</pre>
