@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+
+metadata:
+  name: "rs-web"
+
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: web
+
+  template:
+    metadata:
+      name: "my-pod"
+      labels:
+        dc: "IN"
+        app: "web"
+    spec:
+      containers:
+        - name: "myweb"
+          image: "tomcat"

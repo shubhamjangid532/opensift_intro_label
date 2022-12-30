@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: web-app-1
+  labels:
+    dc: IN
+    app: web
+spec:
+  containers:
+    - name: web
+      image: tomcat 
